@@ -1,0 +1,35 @@
+// The visualization of Mojito Architecture Search
+digraph {
+	node [fontsize=32 height=0.8]
+	subgraph mojito {
+		"mojito-0" [label="MBConv4-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=3.5]
+		"mojito-1" [label="MBConv6-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-0" -> "mojito-1"
+		"mojito-2" [label="MBConv6-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-1" -> "mojito-2"
+		"mojito-3" [label="MBConv4-3x3" color="#0076c5" fontcolor=white shape=record style="rounded,filled" width=3.5]
+		"mojito-2" -> "mojito-3"
+		"mojito-4" [label="MBConv4-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=3.5]
+		"mojito-3" -> "mojito-4"
+		"mojito-5" [label="MBConv3-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=3]
+		"mojito-4" -> "mojito-5"
+		"mojito-8" [label="MBConv3-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=3]
+		"mojito-5" -> "mojito-8"
+		"mojito-9" [label="MBConv6-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-8" -> "mojito-9"
+		"mojito-10" [label="MBConv3-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=3]
+		"mojito-9" -> "mojito-10"
+		"mojito-12" [label="MBConv4-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=3.5]
+		"mojito-10" -> "mojito-12"
+		"mojito-13" [label="MBConv6-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-12" -> "mojito-13"
+		"mojito-16" [label="MBConv6-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-13" -> "mojito-16"
+		"mojito-17" [label="MBConv6-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-16" -> "mojito-17"
+		"mojito-18" [label="MBConv6-5x5" color="#f7ad28" fontcolor=white shape=record style="rounded,filled" width=4.5]
+		"mojito-17" -> "mojito-18"
+		"mojito-19" [label="MBConv3-7x7" color="#991400" fontcolor=white shape=record style="rounded,filled" width=3]
+		"mojito-18" -> "mojito-19"
+	}
+}
